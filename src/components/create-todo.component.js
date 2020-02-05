@@ -113,7 +113,7 @@ onSubmit(e) {
             completed: this.state.completed
         };
     
-    axios.post('http://localhost:4000/todos/', newTodo)
+    axios.post('https://calm-fortress-42269.herokuapp.com/todos', newTodo)
             .then(res => console.log(res.data));
 
         this.setState({

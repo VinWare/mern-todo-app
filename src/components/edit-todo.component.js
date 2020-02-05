@@ -108,7 +108,7 @@ export default class EditTodo extends Component {
             completed: this.state.completed
         };
         console.log(obj);
-        axios.put('http://localhost:4000/todos/'+this.props.match.params.id, obj)
+        axios.put('https://calm-fortress-42269.herokuapp.com/todos'+this.props.match.params.id, obj)
             .then(res => console.log(res.data));
         
         this.props.history.push('/');
