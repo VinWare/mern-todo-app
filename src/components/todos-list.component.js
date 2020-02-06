@@ -8,7 +8,7 @@ const Todo = props => (
         <td>{props.todo.responsible}</td>
         <td>{props.todo.priority}</td>
         <td>
-            <Link to={"/edit/"+props.todo._id}>Edit</Link>
+            <Link to={process.env.PUBLIC_URL + "/edit/"+props.todo._id}>Edit</Link>
         </td>
     </tr>
 )
